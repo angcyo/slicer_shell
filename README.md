@@ -1,6 +1,8 @@
 # slicer_shell
 2025-09-01
 
+https://github.com/FlutterStudioIst/3d_res
+
 ## SuperSlicer
 
 https://github.com/supermerill/SuperSlicer
