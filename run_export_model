@@ -25,15 +25,15 @@ $app --info ./model/Toothy_Baby_Croc.stl
 #$app --info ./.export/Toothy_Baby_Croc_s0.5.obj
 
 ## 缩放输出 --scale-to-fit 会保持缩放比
-#$app ./model/Toothy_Baby_Croc.stl --export-gcode --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.gcode --center 0,0
+$app ./model/Toothy_Baby_Croc.stl --export-gcode --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.gcode --center 0,0
 #$app ./model/Toothy_Baby_Croc.stl --export-obj --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.obj --center 0,0
 #$app --info ./.export/Toothy_Baby_Croc_s10.obj
 
 #$app ./model/Toothy_Baby_Croc.stl --export-stl --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.stl --center 0,0
 #$app --info ./.export/Toothy_Baby_Croc_s10.stl
 
-$app ./model/Toothy_Baby_Croc.stl --export-obj --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.obj --center 0,0
-$app --info ./.export/Toothy_Baby_Croc_s10.obj
+#$app ./model/Toothy_Baby_Croc.stl --export-obj --scale-to-fit 10,10,10 --output ./.export/Toothy_Baby_Croc_s10.obj --center 0,0
+#$app --info ./.export/Toothy_Baby_Croc_s10.obj
 
 ## test
 #$app ./.export/Toothy_Baby_Croc.obj --export-obj --cut 2 --output ./.export
