@@ -2,6 +2,7 @@
 app=/Applications/SuperSlicer.app/Contents/MacOS/SuperSlicer
 
 # 获取模型信息
+
 #[Toothy_Baby_Croc.stl]
 #size_x = 54.995804
 #size_y = 89.797913
@@ -36,5 +37,22 @@ app=/Applications/SuperSlicer.app/Contents/MacOS/SuperSlicer
 
 #$app --info ./model/Football.obj
 
+#Unknown file format. Input file must have .stl, .obj, .step/.stp, .svg, .amf(.xml) or extension .3mf(.zip).
+#$app --info ./model/business_man.glb
 
-$app --info ./model/business_man.glb
+#[LaserPecker.svg]
+#size_x = 28.069759
+#size_y = 46.914585
+#size_z = 10.000000
+#min_x = -14.034880
+#min_y = -23.457293
+#min_z = 0.000000
+#max_x = 14.034880
+#max_y = 23.457293
+#max_z = 10.000000
+#number_of_facets = 1132
+#manifold = yes
+#number_of_parts =  3
+#volume = 3307.533203
+
+$app --info ./model/LaserPecker.svg
