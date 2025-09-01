@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+app=/Applications/SuperSlicer.app/Contents/MacOS/SuperSlicer
+
+#$app --help > superslicer/SuperSlicer_2.7.61.8.txt
+
+$app --help-fff > superslicer/SuperSlicer_2.7.61.8_fff.txt
