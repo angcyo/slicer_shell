@@ -21,8 +21,13 @@ mkdir -p ./.export
 #$app ./model/Toothy_Baby_Croc.stl --export-gcode --scale 0.5 --output ./.export/Toothy_Baby_Croc_s0.5.gcode --center 0,0
 
 $app --info ./model/Toothy_Baby_Croc.stl
-$app ./model/Toothy_Baby_Croc.stl --export-obj --scale 0.5 --output ./.export/Toothy_Baby_Croc_s0.5.obj --center 0,0
-$app --info ./.export/Toothy_Baby_Croc_s0.5.obj
+#$app ./model/Toothy_Baby_Croc.stl --export-obj --scale 0.5 --output ./.export/Toothy_Baby_Croc_s0.5.obj --center 0,0
+#$app --info ./.export/Toothy_Baby_Croc_s0.5.obj
+
+## 缩放输出 --scale-to-fit 会保持缩放比
+#$app ./model/Toothy_Baby_Croc.stl --export-gcode --scale-to-fit 20,20,20 --output ./.export/Toothy_Baby_Croc_s20.gcode --center 0,0
+$app ./model/Toothy_Baby_Croc.stl --export-obj --scale-to-fit 10,20,10 --output ./.export/Toothy_Baby_Croc_s20.obj --center 0,0
+$app --info ./.export/Toothy_Baby_Croc_s20.obj
 
 ## test
 #$app ./.export/Toothy_Baby_Croc.obj --export-obj --cut 2 --output ./.export
