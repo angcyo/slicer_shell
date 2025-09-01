@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+source _setup
+
+mkdir -p ./.export
+
+# 将模型切片, 默认输出gcode数据
+#$app --slice ./.export/Toothy_Baby_Croc.obj --output ./.export
+
+# 等效 --slice
+#$app --export-gcode ./.export/Toothy_Baby_Croc.obj --output ./.export/Toothy_Baby_Croc_2.gcode
+
+# 在指定的z轴位置切割模型, (未测通)
+#$app --slice ./.export/Toothy_Baby_Croc.obj --cut 0.6 --output ./.export/Toothy_Baby_Croc_cut1.gcode

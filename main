@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
-source ./setup
+source _setup
 
+# 命令帮助
 #$app --help > superslicer/SuperSlicer_2.7.61.8.txt
+#$app --help-fff > superslicer/SuperSlicer_2.7.61.8_fff.txt
 
-$app --help-fff > superslicer/SuperSlicer_2.7.61.8_fff.txt
+# 保存配置
+$app --save superslicer/SuperSlicer_2.7.61.8.ini

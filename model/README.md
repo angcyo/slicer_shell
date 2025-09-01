@@ -2,6 +2,10 @@
 
 https://github.com/FlutterStudioIst/3d_res
 
+https://3dviewer.net/
+
+https://ncviewer.com/
+
 ## 3D文件格式说明
 
 三维对象的电子表示称为 3D 文件。

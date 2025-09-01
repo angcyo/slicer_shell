@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source ./setup
+source _setup
 
 # 获取模型信息
 

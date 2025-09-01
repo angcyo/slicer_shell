@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+source _setup
+
+mkdir -p ./.export
+
+# 转换模型, 导出新的模型数据
+
+## svg导出成obj模型
+#$app ./model/LaserPecker.svg --export-obj --output ./.export
+#$app --info ./.export/LaserPecker.obj
+
+## stl导出成obj模型
+#$app --info ./.export/Toothy_Baby_Croc.obj
+#$app ./model/Toothy_Baby_Croc.stl --export-obj --output ./.export
+#$app --info ./.export/Toothy_Baby_Croc.obj
+
+## stl导出成gcode,在指定中心点位置 --center
+#$app ./.export/Toothy_Baby_Croc.obj --export-gcode --center 0,0 --output ./.export
+
+## 缩放输出 --scale
+#$app ./model/Toothy_Baby_Croc.stl --export-gcode --scale 0.5 --output ./.export/Toothy_Baby_Croc_s0.5.gcode --center 0,0
+
+$app --info ./model/Toothy_Baby_Croc.stl
+$app ./model/Toothy_Baby_Croc.stl --export-obj --scale 0.5 --output ./.export/Toothy_Baby_Croc_s0.5.obj --center 0,0
+$app --info ./.export/Toothy_Baby_Croc_s0.5.obj
+
+## test
+#$app ./.export/Toothy_Baby_Croc.obj --export-obj --cut 2 --output ./.export
+
+# ---
+
+# stl: 17.3MB -> gcode: 8.6MB
+#$app ./model/Toothy_Baby_Croc.stl --export-gcode --output ./.export
+# stl: 17.3MB -> obj: 12.8MB
+#$app ./model/Toothy_Baby_Croc.stl --export-obj --output ./.export
+# stl: 17.3MB -> 3mf: 6.3MB
+#$app ./model/Toothy_Baby_Croc.stl --export-3mf --output ./.export
+# stl: 17.3MB -> amf: 6.9MB
+#$app ./model/Toothy_Baby_Croc.stl --export-amf --output ./.export
+# stl: 17.3MB -> sl1: 6.9MB
+#$app ./model/Toothy_Baby_Croc.stl --export-sla --output ./.export
+# stl: 17.3MB -> stl: 17.3MB
+#$app ./model/Toothy_Baby_Croc.stl --export-stl --output ./.export
