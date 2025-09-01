@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+app=/Applications/SuperSlicer.app/Contents/MacOS/SuperSlicer
+
+# 获取模型信息
+#[Toothy_Baby_Croc.stl]
+#size_x = 54.995804
+#size_y = 89.797913
+#size_z = 60.003437
+#min_x = 82.502090
+#min_y = 65.101044
+#min_z = 0.000000
+#max_x = 137.497894
+#max_y = 154.898956
+#max_z = 60.003437
+#number_of_facets = 345000
+#manifold = yes
+#number_of_parts =  1
+#volume = 94556.296875
+
+#$app --info ./model/Toothy_Baby_Croc.stl
+
+#[Football.obj]
+#size_x = 60.442398
+#size_y = 60.442404
+#size_z = 60.442398
+#min_x = -26.746998
+#min_y = 6.046198
+#min_z = -33.936100
+#max_x = 33.695400
+#max_y = 66.488602
+#max_z = 26.506298
+#number_of_facets = 12176
+#manifold = yes
+#number_of_parts =  1
+#volume = 115406.312500
+
+#$app --info ./model/Football.obj
+
+
+$app --info ./model/business_man.glb
