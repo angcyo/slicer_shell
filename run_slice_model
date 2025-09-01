@@ -14,4 +14,4 @@ mkdir -p ./.export
 
 # 使用指定配置进行切片
 $app --slice ./model/Toothy_Baby_Croc.stl --output ./.export --load ./superslicer/slice_config.ini \
-  --nozzle-diameter 0.1 --layer-height 0.1 --scale-to-fit 20,20,20 --center 0,0
+  --nozzle-diameter 0.1 --layer-height 0.1 --scale-to-fit 10,10,10 --center 0,0
