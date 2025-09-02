@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Turn off echo
+set +x
+
+git remote -v
+git add .
+git commit -a -m "init"
+git push origin
